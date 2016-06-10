@@ -1,0 +1,168 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.app{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+}
+
+.header{
+  background-color: rgba(252, 90, 44, 0.89);
+}
+
+.app-container{
+  width: 100%;
+  height: 100%;
+}
+.main-nav{
+  padding: 10px;
+}
+
+.nav-title{
+  color: white;
+  font-size: 32px;
+  font-family: arial;
+}
+
+.flex-container{
+  display: flex;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+.flex-column{
+  flex-direction: column;
+}
+.flex-justify-space-between{
+  justify-content: space-between;
+}
+.flex-justify-center{
+  justify-content: center;
+}
+.flex-align-center{
+  align-items: center;
+}
+.main-container{
+  background: linear-gradient(135deg, #FFFF99, rgba(252, 90, 44, 0.89));
+  height: 100%;
+  overflow: hidden;
+}
+.main-header{
+  color: white;
+  font-family: arial;
+  font-size: 48px;
+  margin: 20px;
+}
+
+.spacing{
+  margin : 10px;
+  padding: 5px;
+}
+
+.forecast-header{
+	font-size: 48px;
+	text-align: center;
+	font-family: arial;
+	padding: 20px;
+}
+
+.forecast-subheader{
+	font-size: 32px;
+	text-align: center;
+	font-family: arial;
+	padding-bottom: 10px;
+}
+
+.forecast-body{
+	width: 300px;
+	height: 300px;
+	box-sizing: border-box;
+	padding: 20px;
+	text-align: center;
+}
+
+.forecast-body-header{
+	margin: 10px;
+	font-size: 20px;
+}
+
+.forecast-props{
+	margin: 10px;
+	font-size: 24px;
+	font-family: arial;
+}
+
+.forecast-props li{
+		margin: 10px;
+}
+
+.forecast-body img, .forecast-props img{
+	width: 100px;
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+/* Transition animation between component */
+.appear-enter {
+  transition-duration: .7s;
+  transition-property: opacity;
+  transition-timing-function: ease-out;
+  opacity: 0;
+}
+.appear-enter.appear-enter-active{
+  opacity: 1;
+}
+.appear-leave {
+  opacity: 0;
+}
